@@ -40,10 +40,6 @@ __MAC_OS_X_VERSION_MIN_REQUIRED >= __MAC_10_8)
 @property (strong, nonatomic) NSDictionary* sensorData;
 
 
-
-
-
-
 #pragma mark - Singleton Methods
 
 
@@ -104,6 +100,7 @@ __MAC_OS_X_VERSION_MIN_REQUIRED >= __MAC_10_8)
 - (void) stopMotionServices;
 - (void) addSoftTapObserver:(id)object withSelector:(SEL)selector;
 - (void) addWaveObserver:(id)object withSelector:(SEL)selector;
+- (void) addKnockObserver:(id)object withSelector:(SEL)selector;
 
 
 @end

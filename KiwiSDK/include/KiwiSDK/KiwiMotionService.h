@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CoreMotion.h>
 
+#define kKIWI_SOFT_TAP_NOTIFICATION @"KIWI_SOFT_TAP_NOTIFICATION"
+#define kKIWI_WAVE_NOTIFICATION @"KIWI_WAVE_NOTIFICATION"
+#define kKIWI_KNOCK_NOTIFICATION @"KIWI_KNOCK_NOTIFICATION"
+
 @interface KiwiMotionService : NSObject
 
 @property (strong, nonatomic) CMMotionManager* motionManager;
@@ -22,5 +26,11 @@
 
 - (void) startMotionDetection;
 - (void) stopMotionDetection;
+
+#pragma mark - Motion Tap, Knock, Wave Methods
+
+- (void) addSoftTapObserver:(id)object withSelector:(SEL)selector;
+- (void) addWaveObserver:(id)object withSelector:(SEL)selector;
+- (void) addKnockObserver:(id)object withSelector:(SEL)selector;
 
 @end

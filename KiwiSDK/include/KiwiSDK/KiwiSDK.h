@@ -98,6 +98,11 @@ __MAC_OS_X_VERSION_MIN_REQUIRED >= __MAC_10_8)
 
 - (void) startMotionServices;
 - (void) stopMotionServices;
+
++ (void) setSoftTapSensitivity:(int)sensitivity;
++ (void) setWaveSensitivity:(int)sensitivity;
++ (void) setKnockSensitivity:(int)sensitivity;
+
 - (void) addSoftTapObserver:(id)object withSelector:(SEL)selector;
 - (void) addWaveObserver:(id)object withSelector:(SEL)selector;
 - (void) addKnockObserver:(id)object withSelector:(SEL)selector;

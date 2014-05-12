@@ -21,6 +21,10 @@
 @property (nonatomic) NSUInteger rollingMotionDataSampleSize;
 @property (strong, nonatomic) NSMutableArray* rollingMotionDataArray;
 
+@property (nonatomic) int softtapSensitivity; //set between 10 - 20
+@property (nonatomic) int knockSensitivity; //set between 60 - 90
+@property (nonatomic) int waveSensitivity; //set between -5 and -15
+
 + (id)sharedInstance;
 - (instancetype) init;
 
